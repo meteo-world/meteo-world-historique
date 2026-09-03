@@ -24,7 +24,7 @@ jobs:
 
       - name: Générer stations-meteofrance.json
         env:
-          METEOFRANCE_API_KEY: ${{ secrets.METEOFRANCE_API_KEY }}
+         METEOFRANCE_API_KEY: ${{ secrets.METEOFRANCE_CLIM_API_KEY }}
         run: python generate_stations.py
 
       - name: Vérifier le fichier
